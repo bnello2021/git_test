@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0d1b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A very late, very public birthday present 🎁">
+<meta property="og:description" content="An official* gift from your brother. Delivery delayed by 48 hours due to an extremely convenient IPO.">
+<title>A Very Late, Very Public Birthday Present 🎁</title>
+<style>
+:root{--ink:#f8f3e9;--muted:#ada9bf;--gold:#ffce74;--gold2:#e6a74d;--lav:#bd96fb;--bg:#090d1b;--glass:rgba(255,255,255,.065)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;min-height:100svh;color:var(--ink);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:radial-gradient(ellipse 95% 65% at 50% 26%,#333056 0%,#14172c 45%,#090d1b 90%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;opacity:.2;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:37px 37px;mask-image:linear-gradient(to bottom,#000,transparent 85%);pointer-events:none}
+.glow{position:fixed;width:40vw;height:40vw;min-width:280px;min-height:280px;border-radius:50%;background:rgba(142,91,247,.13);filter:blur(100px);left:-14vw;bottom:4vh;z-index:-1;pointer-events:none}
+.shell{width:min(100% - 34px,700px);margin:0 auto;padding:27px 0 max(50px,env(safe-area-inset-bottom))}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:.15em;font-weight:800;color:#c7bddc}
+.brandmark{display:flex;align-items:center;gap:8px}
+.brandmark:before{content:"✳";font-size:19px;color:var(--gold)}
+.status{display:flex;align-items:center;gap:7px;border:1px solid rgba(255,210,119,.35);border-radius:999px;padding:8px 10px;background:rgba(255,203,111,.065);color:var(--gold);white-space:nowrap;font-size:9px;letter-spacing:.08em}
+.status:before{content:"";width:6px;height:6px;border-radius:100%;background:var(--gold);box-shadow:0 0 9px var(--gold)}
+.intro{text-align:center;padding:47px 0 0;transition:opacity .4s,transform .4s}
+.intro.fade-out{opacity:0;transform:translateY(-20px);pointer-events:none}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:.19em;text-transform:uppercase;color:var(--gold);margin:0 0 17px}
+h1,h2{letter-spacing:-.055em;font-weight:850;margin:0}
+h1{font-size:clamp(43px,9vw,71px);line-height:1.04}
+h1 em{font-style:normal;background:linear-gradient(100deg,#ffdd96 10%,#ffd08b 47%,#bda1fb 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{max-width:515px;margin:20px auto 0;color:#d3cfe0;font-size:clamp(15px,3.65vw,18px);line-height:1.6}
+.lede b{color:#fff}
+.present-wrap{height:280px;display:flex;justify-content:center;align-items:center;position:relative;margin:7px 0 3px}
+.giftbtn{border:0;background:none;width:250px;height:240px;position:relative;cursor:pointer;animation:bob 3.2s ease-in-out infinite;outline-offset:8px;filter:drop-shadow(0 32px 23px rgba(0,0,0,.24))}
+.giftbtn:hover{transform:scale(1.035)}
+.boxbody{position:absolute;width:195px;height:139px;left:28px;top:94px;border-radius:5px 5px 15px 15px;background:linear-gradient(135deg,#b57cff,#7e53c9 55%,#5d368d);box-shadow:inset -22px -5px 0 rgba(20,0,65,.14),inset 6px 4px 0 rgba(255,255,255,.13)}
+.boxbody:before{content:"";position:absolute;width:31px;inset:0 auto 0 calc(50% - 15px);background:linear-gradient(90deg,#e5a63e,#ffe49b 50%,#d88d35);box-shadow:1px 0 8px rgba(255,220,140,.28)}
+.boxlid{position:absolute;z-index:3;width:215px;height:49px;left:18px;top:67px;border-radius:7px;background:linear-gradient(135deg,#c694ff,#8958d3 55%,#7549b0);box-shadow:inset -8px -5px 0 rgba(27,0,70,.13),0 6px 7px rgba(0,0,0,.12);transform-origin:85% 100%;transition:transform 1s cubic-bezier(.18,.8,.25,1),opacity .6s}
+.boxlid:before{content:"";position:absolute;width:33px;inset:0 auto 0 calc(50% - 16px);background:linear-gradient(90deg,#dca044,#ffe4a1 55%,#cf8731)}
+.bow{position:absolute;z-index:4;top:22px;left:97px;width:55px;height:55px;transition:transform 1s cubic-bezier(.18,.8,.25,1),opacity .6s}
+.bow:before,.bow:after{content:"";position:absolute;width:47px;height:30px;top:10px;border:9px solid #ffd279;border-radius:80% 20% 80% 20%;transform:rotate(34deg);left:-29px}
+.bow:after{transform:scaleX(-1) rotate(34deg);left:35px}
+.bow i{position:absolute;width:24px;height:24px;border-radius:50%;left:15px;top:15px;z-index:2;background:#ffe4a1;box-shadow:inset -6px -3px 0 #dca04e}
+.giftbtn.opening{animation:none}
+.giftbtn.opening .boxlid{transform:translateY(-160px) rotate(-25deg);opacity:0}
+.giftbtn.opening .bow{transform:translateY(-175px) rotate(-25deg);opacity:0}
+.giftbtn.opening .boxbody{transform:scale(.85);transition:transform .8s}
+.sparkle{position:absolute;color:#ffdf9a;font-size:22px;animation:twinkle 2.1s infinite ease-in-out;pointer-events:none}
+.s1{left:10%;top:16%}.s2{right:16%;top:32%;animation-delay:.7s}.s3{left:22%;bottom:14%;animation-delay:1.2s}.s4{right:23%;bottom:12%;animation-delay:.25s}
+.cta{appearance:none;cursor:pointer;background:linear-gradient(115deg,#ffdf9b,#efb95b);border:0;border-radius:15px;color:#21162a;font-weight:900;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:19px 25px;min-height:58px;box-shadow:0 12px 36px rgba(255,197,93,.2);transition:transform .2s,box-shadow .2s}
+.cta:hover,.cta:focus-visible{transform:translateY(-2px);box-shadow:0 14px 41px rgba(255,197,93,.31)}
+.note{color:#aaa3bf;font-size:12px;margin:14px auto 0}
+.loading{text-align:center;padding:18vh 0 22vh}
+.spinner{margin:0 auto 25px;width:66px;height:66px;border:3px solid rgba(255,255,255,.1);border-top-color:var(--gold);border-right-color:var(--lav);border-radius:50%;animation:spin .8s linear infinite}
+.loading h2{font-size:28px}
+.loading p{color:var(--muted);line-height:1.7}
+.reveal{opacity:0;transform:translateY(24px) scale(.97);transition:opacity .8s,transform .8s;padding-top:49px;text-align:center}
+.reveal.show{opacity:1;transform:none}
+.reveal h2{font-size:clamp(40px,8.5vw,68px);line-height:1.03;margin-bottom:27px}
+.reveal h2 span{display:block;color:var(--gold)}
+.certificate{position:relative;overflow:hidden;padding:7px;border-radius:23px;background:linear-gradient(130deg,#e6c07b,#fff3c3 35%,#a66d35 75%,#f9de9a);box-shadow:0 28px 75px rgba(0,0,0,.38),0 0 75px rgba(255,202,111,.1);transform:rotate(-2deg);animation:arrive 1s cubic-bezier(.17,1.3,.34,1) backwards}
+.certificate:before{content:"";position:absolute;inset:-70%;pointer-events:none;background:linear-gradient(105deg,transparent 45%,rgba(255,255,255,.45) 50%,transparent 55%);transform:translateX(-70%) rotate(-12deg);animation:shine 3.7s 1.5s infinite ease-in-out;z-index:3}
+.certinner{border-radius:18px;border:1px solid rgba(255,228,163,.48);padding:24px 26px 19px;background:radial-gradient(circle at 50% -50%,#374055 0%,#1a1c2c 58%,#10131d 100%);text-align:left;position:relative}
+.certhead{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;letter-spacing:.17em;font-weight:900}
+.certhead b{color:#f5e0b9}
+.ipo{font-size:9px;color:#f7dd9b;border:1px solid rgba(255,214,132,.55);border-radius:100px;padding:7px 10px;letter-spacing:.08em;white-space:nowrap}
+.certtag{font-size:10px;letter-spacing:.14em;color:#d6c0a8;margin-top:35px;text-transform:uppercase}
+.one{font-weight:900;font-size:clamp(92px,20vw,144px);letter-spacing:-.11em;color:#f8e6b7;line-height:1;display:flex;align-items:baseline;gap:24px;margin:6px 0 4px}
+.one small{font-weight:800;font-size:25px;letter-spacing:.01em;text-transform:uppercase;color:#e5c48d}
+.certname{font-size:23px;font-weight:750;letter-spacing:-.025em}
+.certname small{font-size:14px;color:#cbb4a5;white-space:nowrap;font-weight:500}
+.rule{height:1px;background:linear-gradient(90deg,rgba(255,214,148,.7),rgba(255,214,148,.07));margin:28px 0 17px}
+.certbottom{display:flex;justify-content:space-between;gap:12px;color:#cfbfba;font-size:10px;line-height:1.7;letter-spacing:.04em}
+.certbottom b{display:block;color:#fbe8c2;font-size:11px}
+.quote{margin:31px auto 20px;padding:25px 23px;border:1px solid rgba(255,255,255,.14);border-radius:20px;background:var(--glass);backdrop-filter:blur(10px)}
+.quote p{font-size:clamp(20px,5vw,26px);font-weight:740;letter-spacing:-.025em;line-height:1.38;margin:0}
+.quote p em{color:var(--gold);font-style:normal}
+.quote span{display:block;margin-top:17px;color:#bdb6cd;font-size:10px;letter-spacing:.1em;font-weight:800;line-height:1.6}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:18px}
+.secondary{min-height:48px;padding:13px 17px;font-size:12px;font-weight:800;cursor:pointer;color:#f5e9fe;border:1px solid rgba(245,214,255,.25);border-radius:12px;background:rgba(255,255,255,.09);transition:background .2s,transform .2s}
+.secondary:hover{background:rgba(255,255,255,.16);transform:translateY(-2px)}
+.report{margin:17px auto 0;border-radius:18px;padding:22px;text-align:left;background:#f4e6cb;color:#2a2032;box-shadow:0 14px 30px rgba(0,0,0,.19);animation:pop .5s ease-out}
+.report h3{margin:0;font-size:20px;letter-spacing:-.03em}
+.report .sub{font-size:11px;letter-spacing:.09em;color:#67586a;font-weight:800;margin-top:5px}
+.score{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #d6c7b9;padding:12px 0;font-size:14px;font-weight:700}
+.score:first-of-type{margin-top:16px}
+.score b{white-space:nowrap}
+.report .verdict{font-size:13px;line-height:1.5;margin:13px 0 0;font-weight:650;color:#6f3e6f}
+.legal{font-size:10px;max-width:500px;margin:22px auto 0;color:#817e96;line-height:1.65}
+.footer{margin-top:40px;color:#a9a2ba;font-size:12px;text-align:center}
+.footer strong{color:#f8dfb5}
+.confetti{position:fixed;z-index:100;top:-16px;width:10px;height:16px;pointer-events:none;border-radius:2px;animation:fall var(--duration) linear forwards;left:var(--left);background:var(--color);transform:rotate(var(--rotate));opacity:.95}
+@keyframes fall{0%{transform:translate3d(0,-30px,0) rotate(0);opacity:1}100%{transform:translate3d(var(--drift),108vh,0) rotate(var(--spin));opacity:.7}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.75)}50%{opacity:1;transform:scale(1.3)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes shine{0%,20%{transform:translateX(-85%) rotate(-12deg)}50%,100%{transform:translateX(85%) rotate(-12deg)}}
+@keyframes arrive{from{opacity:0;transform:translateY(70px) rotate(-15deg) scale(.75)}to{opacity:1;transform:rotate(-2deg) scale(1)}}
+@keyframes pop{from{opacity:0;transform:scale(.9) translateY(-8px)}to{opacity:1;transform:none}}
+@media(max-width:420px){.shell{width:calc(100% - 28px)}.topbar{font-size:9px}.status{font-size:8px;padding:7px 8px}.intro{padding-top:49px}.present-wrap{height:260px}.certinner{padding:19px 17px}.certhead{font-size:12px}.ipo{font-size:8px}.certtag{margin-top:30px}.one{gap:14px}.one small{font-size:20px}.certname{font-size:20px}.certname small{font-size:11px}.certbottom{font-size:9px}.actions{flex-direction:column}.secondary{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+<main class="shell">
+<header class="topbar"><div class="brandmark">THE BELATED BROTHER FUND</div><div class="status">48 HOURS OVERDUE</div></header>
+<section id="intro" class="intro">
+<p class="eyebrow">November 19, 2026 · Late but listed</p>
+<h1>Happy <em>belated</em><br>birthday, sis.</h1>
+<p class="lede">I didn't forget your birthday. I was just waiting for your present to become <b>publicly traded.</b><br><br>That's my story, and I'm sticking to it.</p>
+<div class="present-wrap">
+<span class="sparkle s1" aria-hidden="true">✦</span><span class="sparkle s2" aria-hidden="true">✧</span><span class="sparkle s3" aria-hidden="true">✧</span><span class="sparkle s4" aria-hidden="true">✦</span>
+<button id="gift" class="giftbtn" aria-label="Unwrap your birthday present"><span class="boxbody"></span><span class="boxlid"></span><span class="bow"><i></i></span></button>
+</div>
+<button class="cta" id="unwrapBtn">🎁 Unwrap your IPO present</button>
+<p class="note">Please ignore the faint smell of last-minute panic.</p>
+</section>
+<section id="loading" class="loading" hidden aria-live="polite">
+<div class="spinner"></div><h2>Processing birthday...</h2>
+<p id="loadingText">Consulting Wall Street to justify being late.</p>
+</section>
+<section id="reveal" class="reveal" hidden aria-live="polite">
+<p class="eyebrow">Breaking news: Your gift is finally here</p>
+<h2>To the moon.<span>Two days late.</span></h2>
+<article class="certificate" aria-label="Commemorative gift certificate for one Anthropic share">
+<div class="certinner">
+<div class="certhead"><b>✳ ANTHROPIC</b><span class="ipo">IPO DAY · 2026</span></div>
+<div class="certtag">This certifies a birthday gift of</div>
+<div class="one">1 <small>share</small></div>
+<div class="certname">Anthropic, PBC <small>NASDAQ: ANT</small></div>
+<div class="rule"></div>
+<div class="certbottom"><span><b>ISSUED</b>NOV 19, 2026</span><span style="text-align:right"><b>GIFTED WITH LOVE</b>AND A 48-HOUR DELAY</span></div>
+</div>
+</article>
+<div class="quote">
+<p>Some brothers send flowers on time. I bought you part of an AI company <em>two days late.</em><br><br>Which one of us is really thinking ahead?</p>
+<span>— YOUR BROTHER, CHIEF PROCRASTINATION OFFICER</span>
+</div>
+<div id="report" class="report" hidden>
+<h3>📉 Brother Performance Report</h3><div class="sub">INDEPENDENT AUDIT · FY 2026</div>
+<div class="score"><span>Birthday punctuality</span><b>0 / 10</b></div>
+<div class="score"><span>Excuse creativity</span><b>11 / 10</b></div>
+<div class="score"><span>Gift potential</span><b>🚀 / 10</b></div>
+<div class="score"><span>Chance he forgets next year</span><b>Prospectus pending</b></div>
+<p class="verdict">Analyst note: Artificial intelligence can now do almost anything. Apparently reminding your brother of your birthday is still an unsolved problem.</p>
+</div>
+<div class="actions"><button id="roast" class="secondary">📊 Audit my brother</button><button id="again" class="secondary">🎉 More confetti, please</button></div>
+<p class="legal">*A celebratory birthday announcement, not an official stock certificate or evidence of transfer. Any actual share transfer is handled separately.</p>
+</section>
+<footer class="footer">Made with <strong>❤️</strong>, questionable timing, and excellent investment instincts.</footer>
+</main>
+<script>
+(function(){
+"use strict";
+var opened=false;
+var intro=document.getElementById("intro");
+var loading=document.getElementById("loading");
+var reveal=document.getElementById("reveal");
+var gift=document.getElementById("gift");
+var report=document.getElementById("report");
+function confetti(amount){
+if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+var palette=["#f9ce74","#b992ff","#ffffff","#6de1d8","#fb8caa","#efae5c"];
+for(var i=0;i<amount;i++){
+var dot=document.createElement("span");dot.className="confetti";
+dot.style.setProperty("--left",(Math.random()*100)+"vw");
+dot.style.setProperty("--color",palette[i%palette.length]);
+dot.style.setProperty("--duration",(3+Math.random()*3.5)+"s");
+dot.style.setProperty("--drift",((Math.random()-.5)*220)+"px");
+dot.style.setProperty("--spin",((Math.random()-.5)*1600)+"deg");
+dot.style.setProperty("--rotate",(Math.random()*360)+"deg");
+dot.style.animationDelay=(Math.random()*.7)+"s";
+dot.style.width=(5+Math.random()*8)+"px";dot.style.height=(8+Math.random()*12)+"px";
+document.body.appendChild(dot);setTimeout(function(el){el.remove()},8000,dot);
+}}
+function unwrap(){
+if(opened)return;opened=true;gift.classList.add("opening");confetti(35);
+setTimeout(function(){intro.classList.add("fade-out")},500);
+setTimeout(function(){intro.hidden=true;loading.hidden=false;window.scrollTo({top:0,behavior:"smooth"})},900);
+setTimeout(function(){document.getElementById("loadingText").textContent="Checking if 48 hours counts as fashionably late..."},1350);
+setTimeout(function(){loading.hidden=true;reveal.hidden=false;requestAnimationFrame(function(){reveal.classList.add("show")});confetti(110);window.scrollTo({top:0,behavior:"smooth"})},2400);
+}
+gift.addEventListener("click",unwrap);
+document.getElementById("unwrapBtn").addEventListener("click",unwrap);
+document.getElementById("roast").addEventListener("click",function(){report.hidden=!report.hidden;if(!report.hidden){report.scrollIntoView({behavior:"smooth",block:"nearest"})}});
+document.getElementById("again").addEventListener("click",function(){confetti(90)});
+})();
+</script>
+</body>
+</html>
